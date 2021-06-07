@@ -9,7 +9,7 @@ A GitHub Action to lookup information from YAML files using [yq](https://github.
         id: lookupSdkVersion
         uses: devorbitus/yq-action-output@v1.1
         with:
-          cmd: yq eval '.renutil.version' $(yq eval '.jobs.build.steps[] | select(.id == "buildStep") | .with.config-file' .github/workflows/release-action.yml)
+          cmd: yq eval '.renutil.version' 'config.yml'
       - name: Restore Cache
         id: restore-cache
         uses: actions/cache@v2
