@@ -1,4 +1,4 @@
-name: 'yq - portable yaml processor'
+name: 'yq with output - portable yaml processor'
 description: 'create, read, update, delete, merge, validate and do more with yaml'
 branding:
   icon: command
